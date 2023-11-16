@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Resultado: Nivel de Inglés</title>
+	<link rel="stylesheet" href="css/test.css">
+</head>
+
+
+<body>
+	<h1>RESULTADO: Nivel de Inglés</h1>
+	<center>
+		<h2>Tu nivel de habilidad es:</h2>
+
+		<div id="content_general" style="display: none;">
+			<h2>Inglés General</h2>
+			<img src="./images/ingles_general.jpg" alt="Inglés General">
+			<p>Tienes habilidades equilibradas en todos los aspectos del inglés.</p>
+		</div>
+
+		<div id="content_business" style="display: none;">
+			<h2>Inglés de Negocios</h2>
+			<img src="./images/ingles_negocios.jpg" alt="Inglés de Negocios">
+			<p>Tu habilidad está enfocada en la comunicación empresarial y profesional.</p>
+		</div>
+
+		<div id="content_personal" style="display: none;">
+			<h2>Inglés Personal</h2>
+			<img src="/images/ingles_personal.jpg" alt="Inglés Personal">
+			<p>Tienes una habilidad casual e informal adecuada para la comunicación personal.</p>
+		</div>
+
+		<div id="result" class="result"></div>
+		<a href="test.html">Volver a realizar el Test de Inglés</a>
+
+		<script>
+			const params = new URLSearchParams(window.location.search);
+			const resultDiv = document.getElementById('result');
+			const received_general = parseInt(params.get("general"));
+			const received_business = parseInt(params.get("business"));
+			const received_personal = parseInt(params.get("personal"));
+
+			if (received_general > received_business && received_general > received_personal) {
+				document.getElementById("content_general").style.display = "block";
+				console.log("Ingresó a Inglés General", received_general);
+			} else if (received_business > received_personal && received_business > received_general) {
+				document.getElementById("content_business").style.display = "block";
+				console.log("Ingresó a Inglés de Negocios", received_business);
+			} else if (received_personal > received_business && received_personal > received_general) {
+				document.getElementById("content_personal").style.display = "block";
+				console.log("Ingresó a Inglés Personal", received_personal);
+			}
+
+			let porcent_general = (received_general / 6) * 100;
+			let porcent_business = (received_business / 6) * 100;
+			let porcent_personal = (received_personal / 6) * 100;
+			resultDiv.textContent = `Resultado: General= ${porcent_general.toFixed(2)}% | Negocios= ${porcent_business.toFixed(2)}% | Personal= ${porcent_personal.toFixed(2)}% `;
+		</script>
+	</center>
+</body>
+
+</html>
+
+</html>
