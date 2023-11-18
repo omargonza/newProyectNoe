@@ -137,6 +137,11 @@ textarea{
     align-self: center;
     margin-right: 1.5rem;
   }
+
+  
+form{
+  background: var(--color-danger-variant);
+}
 }
 
 
@@ -160,11 +165,39 @@ textarea{
       flex: 1 1 100%;
   }
 
+  
+form{
+  background: var(--color-danger-variant);
+}
+
   .form_name {
       flex-direction: column;
   }
 
   .form_name input {
+      margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .contact_aside,
+  .contact_form {
+      max-width: 100%;
+  }
+
+  .contact_aside p {
+    display: none; /* Oculta el párrafo en pantallas pequeñas */
+}
+
+form{
+  background: var(--color-danger-variant);
+}
+  .form_name input {
+      width: 100%;
       margin-right: 0;
   }
 }
@@ -193,6 +226,11 @@ textarea{
   .contact_form {
     text-align: center; /* Alinea al centro para pantallas más pequeñas */
   }
+
+  
+form{
+  background: var(--color-danger-variant);
+}
 }
   /*
   .contact-container{
