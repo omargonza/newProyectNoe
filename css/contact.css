@@ -144,6 +144,26 @@ textarea{
 
 
 @media  screen and (max-width: 600px){
+  .container {
+    flex-direction: column; /* Cambia a una disposición de columna para pantallas más pequeñas */
+  }
+
+  .contact_aside,
+  .contact_form {
+    width: 100%; /* Ocupa todo el ancho en pantallas más pequeñas */
+    margin-bottom: 20px; /* Espaciado inferior para separar los elementos */
+  }
+
+  /* Asegúrate de ajustar estos estilos según tus necesidades específicas para pantallas pequeñas */
+  .contact_aside {
+    text-align: center; /* Alinea al centro para pantallas más pequeñas */
+  }
+
+  .contact_form {
+    text-align: center; /* Alinea al centro para pantallas más pequeñas */
+  }
+}
+  /*
   .contact-container{
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -157,10 +177,11 @@ textarea{
   .form_name{
     flex-direction: column;
   }
-  .form_name input{
+  .form_name input[type="text"]{
     width: 100%;
   }
 }
+*/
 
 
 
