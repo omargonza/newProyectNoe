@@ -51,7 +51,7 @@
     <!--        FINALIZA EL NAVBAR       -->
 
 
-  <!---   <section class="contact">
+    <section class="contact">
         <div class="container contact_container">
             <aside class="contact_aside">
                 <div class="aside_image">
@@ -91,22 +91,24 @@
 
 
 
-           <form class="contact_form">
+           <form action="https://formsubmit.co/peaprenderidiomas@gmail.com" method="POST" class="contact_form">
                 <div class="form_name">
                     <input type="text" name="First Name" placeholder="First Name" required>
-                    <input type="text" name="Last Name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" required>
                 </div>
                 <input type="email" name="Email Adress" placeholder="Your Email Adress"
                  required>
                 <textarea name="Message"   rows="7" placeholder="Message" required></textarea>
                 <button type="submit" class="btn btn-primary">Send Message</button>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                <input type="hidden" name="_captcha" value="false">
             </form>
 
 
         </div>
-    </section> -->
+    </section> 
 
-    <section class="contact">
+  <!---   <section class="contact">
         <div class="container contact_container">
             <h1>CONTÁCTATE CON NOSOTROS</h1>
             <div class="data">
@@ -160,7 +162,7 @@
             <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
             <input type="hidden" name="_captcha" value="false">
         </form>
-    </section>
+    </section> -->
 
 
     <footer class="footer">

@@ -19,7 +19,7 @@
 
   --transition: all 400ms ease;
 }
-/*
+
 .contact_container {
   background: var(--color-bg1);
   padding: 4rem;
@@ -32,7 +32,7 @@
 }
 
 /*---------------------------------ASIDE ----------------------------------*/
-/*
+
 .contact_aside {
   background: var(--color-primary);
   padding: 3rem;
@@ -80,7 +80,7 @@
   background: transparent;
 }
 /*---------------------------------- FORM ------------------------------*/
-/*
+
 .contact_form{
     display: flex;
     flex-direction: column;
@@ -114,7 +114,7 @@ textarea{
 }
 
 /* ============================ MEDIA QUERIES (TABLETS) =====================================*/
-/*
+
 @media screen and (max-width: 1024px){
 
   .contact{
@@ -141,7 +141,7 @@ textarea{
 
 
 /* ============================ MEDIA QUERIES (PHONE) =====================================*/
-/*
+
 
 @media  screen and (max-width: 600px){
   .contact-container{
@@ -161,10 +161,10 @@ textarea{
     width: 100%;
   }
 }
-*/
 
 
 
+/*
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
