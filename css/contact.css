@@ -142,6 +142,30 @@ textarea{
 
 /* ============================ MEDIA QUERIES (PHONE) =====================================*/
 
+@media screen and (max-width: 750px) {
+  .container {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .contact_aside {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .contact_form {
+      flex: 1 1 100%;
+  }
+
+  .form_name {
+      flex-direction: column;
+  }
+
+  .form_name input {
+      margin-right: 0;
+  }
+}
+
 
 @media  screen and (max-width: 600px){
   .container {
@@ -154,7 +178,7 @@ textarea{
     margin-bottom: 20px; /* Espaciado inferior para separar los elementos */
   }
 
-  /* Asegúrate de ajustar estos estilos según tus necesidades específicas para pantallas pequeñas */
+  
   .contact_aside {
     text-align: center; /* Alinea al centro para pantallas más pequeñas */
   }
