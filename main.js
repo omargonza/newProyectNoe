@@ -1,8 +1,22 @@
-// cambiar el estilo de la barra de navegación al desplazar.
-window.addEventListener('scroll',() => {
-    document.querySelector('nav').classList.toggle
-    ('window-scroll',window.scrollY > 0)
-});
+window.onload = function() {
+    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("content").innerHTML = this.responseText;
+        }
+    };
+
+    if (width < 720) {
+        // Si el ancho de la ventana es menor a 768px, carga "small.html"
+        xhttp.open("GET", "contact_mobile.html", true);
+    } else {
+        // Si el ancho de la ventana es mayor o igual a 768px, carga "large.html"
+        xhttp.open("GET", "contact.html", true);
+    }
+    xhttp.send();
+};
 
 // faq preguntas fecuentes, muestre la respuesta al hacer click
 /*
@@ -61,6 +75,7 @@ const closeNav = () =>{
 }
 
 closeBtn.addEventListener("click",closeNav);
+
 /*
 //test js
 const form = document.getElementById('language-proficiency-test');
