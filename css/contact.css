@@ -145,13 +145,16 @@ textarea{
 @media screen and (max-width: 750px) {
   .container {
       flex-direction: column;
-      align-items: stretch;
+      align-items: flex-end;
   }
 
   .contact_aside {
       margin-right: 0;
       margin-bottom: 20px;
   }
+  .contact_aside p {
+    display: none; /* Oculta el párrafo en pantallas pequeñas */
+}
 
   .contact_form {
       flex: 1 1 100%;
@@ -182,6 +185,10 @@ textarea{
   .contact_aside {
     text-align: center; /* Alinea al centro para pantallas más pequeñas */
   }
+
+  .contact_aside p {
+    display: none; /* Oculta el párrafo en pantallas pequeñas */
+}
 
   .contact_form {
     text-align: center; /* Alinea al centro para pantallas más pequeñas */
