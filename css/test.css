@@ -1,5 +1,4 @@
 
-
 :root {
 	--color-primary: #6c63ff;
 	--color-suuuess: #00bf8e;
@@ -10,20 +9,20 @@
 	--color-light: rgba(255, 255, 255, 0.7);
 	--color-black: #000;
 	--color-bg: #1f2641;
-	--color-bg1: #2e3267;
+	--color-bg1:  rgb(244, 75, 75);
 	--color-bg2: #424890;
 	--color-bg3: #abebc6;
 	--color-bg4: #d1f2eb;
 	--color-bg5: #ba0c2f;
 	--color-bg6: #f2f2f2;
 	--color-RU: linear-gradient(to right, #012169, #ffffff, #ba0c2f);
-	--color-UR: linear-gradient(to right, #001033, #ffffff, #aa0b2e);
+	--color-UR: linear-gradient(to right, #001033, #ffffff, #001033);
 	--container-width-lg: 80%;
 	--container-width-md: 90%;
 	--container-width-sm: 94%;
   
 	--transition: all 400ms ease;
-}
+  }
    body {
 		display: flex;
 		flex-direction: column;
@@ -52,6 +51,7 @@
 		gap: 20px; /* Añade un espacio entre las columnas */
 		height: auto; /* Permite que el pie de página se expanda para acomodar su contenido */
 		padding: 20px; /* Añade un poco de espacio alrededor del pie de página */
+		background: var(--color-bg1);
 	}
 	
 	
