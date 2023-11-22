@@ -1,137 +1,129 @@
-
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/test.css">
+
 <body>
-	<nav>
-        <div class="container nav_container">
-            <a href="index.html">
-                <h4>Miss Noe</h4>
-            </a>
-            <ul class="nav_menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
-        </div>
-    </nav>
-	<h1>Test de Ingles: ¿Que busco?</h1>
-	<form id='language-proficiency-test'>
-		<fieldset>
-			<legend>¿Cuál es tu opinión sobre aprender inglés?</legend>
-			<input type="radio" name="q1" value="general">Es importante para la comunicación a nivel mundial.<br>
-			<input type="radio" name="q1" value="business">Es esencial para avanzar en mi carrera.<br>
-			<input type="radio" name="q1" value="personal">Es una habilidad que quiero para mi crecimiento personal.<br>
-		</fieldset>
-	
-		<fieldset>
-			<legend>¿Cómo ves el uso de la tecnología en el aprendizaje de idiomas?</legend>
-			<input type="radio" name="q2" value="interactive">Prefiero plataformas interactivas en línea y aplicaciones.<br>
-			<input type="radio" name="q2" value="traditional">Prefiero métodos tradicionales en el aula.<br>
-			<input type="radio" name="q2" value="blended">Me gusta una mezcla de recursos en línea y fuera de línea.<br>
-		</fieldset>
-	
-		<fieldset>
-			<legend>¿Cuál crees que es la mejor manera de practicar el habla en inglés?</legend>
-			<input type="radio" name="q3" value="conversation">Conversaciones regulares con hablantes nativos.<br>
-			<input type="radio" name="q3" value="language-exchange">Programas de intercambio de idiomas con otros estudiantes.<br>
-			<input type="radio" name="q3" value="solo-practice">Práctica individual utilizando aplicaciones y grabaciones.<br>
-		</fieldset>
-	
-		<fieldset>
-			<legend>¿Cómo te sientes acerca de la gramática en el aprendizaje de idiomas?</legend>
-			<input type="radio" name="q4" value="important">La gramática es crucial para la comunicación efectiva.<br>
-			<input type="radio" name="q4" value="flexible">Aunque es importante, la flexibilidad en el uso del idioma es igualmente vital.<br>
-			<input type="radio" name="q4" value="less-important">Es menos importante que las habilidades prácticas de comunicación.<br>
-		</fieldset>
-	
-		<fieldset>
-			<legend>¿Cuál es tu método preferido para aprender vocabulario?</legend>
-			<input type="radio" name="q5" value="flashcards">Utilizando tarjetas de memoria y técnicas de memorización.<br>
-			<input type="radio" name="q5" value="contextual">Aprendiendo palabras en contexto a través de lectura y escucha.<br>
-			<input type="radio" name="q5" value="games">Participando en juegos y actividades de vocabulario.<br>
-		</fieldset>
-	
-		<fieldset>
-			<legend>¿Cómo planeas aplicar tus habilidades en el idioma inglés?</legend>
-			<input type="radio" name="q6" value="travel">Para viajar y explorar nuevas culturas.<br>
-			<input type="radio" name="q6" value="academic">En estudios académicos o investigación.<br>
-			<input type="radio" name="q6" value="career">Para el avance profesional y oportunidades internacionales.<br>
-		</fieldset>
-	
-		<!-- Agrega más conjuntos de preguntas aquí según sea necesario -->
-	
-		<button type="submit">Descubrir</button>
-		<h3>*Para enviar, debes responder todas las preguntas</h3>
-	</form>
-	
+	<div class="container-form">
+		<form id='language-proficiency-test'>
+			<fieldset>
+				<legend>¿Cuál es tu opinión sobre aprender inglés?</legend>
+				<input type="radio" name="q1" value="general">Es importante para la comunicación a nivel mundial.<br>
+				<input type="radio" name="q1" value="business">Es esencial para avanzar en mi carrera.<br>
+				<input type="radio" name="q1" value="personal">Es una habilidad que quiero para mi crecimiento
+				personal.<br>
+			</fieldset>
+
+			<fieldset>
+				<legend>¿Cómo ves el uso de la tecnología en el aprendizaje de idiomas?</legend>
+				<input type="radio" name="q2" value="interactive">Prefiero plataformas interactivas en línea y
+				aplicaciones.<br>
+				<input type="radio" name="q2" value="traditional">Prefiero métodos tradicionales en el aula.<br>
+				<input type="radio" name="q2" value="blended">Me gusta una mezcla de recursos en línea y fuera de
+				línea.<br>
+			</fieldset>
+
+			<fieldset>
+				<legend>¿Cuál crees que es la mejor manera de practicar el habla en inglés?</legend>
+				<input type="radio" name="q3" value="conversation">Conversaciones regulares con hablantes nativos.<br>
+				<input type="radio" name="q3" value="language-exchange">Programas de intercambio de idiomas con otros
+				estudiantes.<br>
+				<input type="radio" name="q3" value="solo-practice">Práctica individual utilizando aplicaciones y
+				grabaciones.<br>
+			</fieldset>
+
+			<fieldset>
+				<legend>¿Cómo te sientes acerca de la gramática en el aprendizaje de idiomas?</legend>
+				<input type="radio" name="q4" value="important">La gramática es crucial para la comunicación
+				efectiva.<br>
+				<input type="radio" name="q4" value="flexible">Aunque es importante, la flexibilidad en el uso del
+				idioma es igualmente vital.<br>
+				<input type="radio" name="q4" value="less-important">Es menos importante que las habilidades prácticas
+				de comunicación.<br>
+			</fieldset>
+
+			<fieldset>
+				<legend>¿Cuál es tu método preferido para aprender vocabulario?</legend>
+				<input type="radio" name="q5" value="flashcards">Utilizando tarjetas de memoria y técnicas de
+				memorización.<br>
+				<input type="radio" name="q5" value="contextual">Aprendiendo palabras en contexto a través de lectura y
+				escucha.<br>
+				<input type="radio" name="q5" value="games">Participando en juegos y actividades de vocabulario.<br>
+			</fieldset>
+
+			<fieldset>
+				<legend>¿Cómo planeas aplicar tus habilidades en el idioma inglés?</legend>
+				<input type="radio" name="q6" value="travel">Para viajar y explorar nuevas culturas.<br>
+				<input type="radio" name="q6" value="academic">En estudios académicos o investigación.<br>
+				<input type="radio" name="q6" value="career">Para el avance profesional y oportunidades
+				internacionales.<br>
+			</fieldset>
+
+			<!-- Agrega más conjuntos de preguntas aquí según sea necesario -->
+
+			<button type="submit" class="btn btn-primary">Descubrir</button>
+			<h3>*Para enviar, debes responder todas las preguntas</h3>
+		</form>
+	</div>
+
 	<div id="result" class="result"></div>
 
-	
+
 	<footer class="footer">
 		<div class="container footer_container">
 			<div class="footer_1">
 				<a href="index.html" class="footer_logo">
 					<h4>MISS NOE</h4>
 				</a>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cumque maxime recusandae
-					dolor fugit rerum modi veritatis nulla voluptatum magnam dolorem ratione ea vel ullam
-					molestias quisquam, atque consequuntur voluptate?
-				</p>
-			</div>
-	
-			<div class="footer_2">
-				<h4>Permalinks</h4>
-				<ul class="permalinks">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="courses.html">Courses</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-	
-			<div class="footer_3">
-				<h4>Primacy</h4>
-				<ul class="privacy">
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Terminos y condiciones</a></li>
-					<li><a href="#">Courses</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-	
-			<div class="footer_4">
-				<h4>Contactenos</h4>
-				<div>
-					<p>+54 911 5142-4362</p>
-					<p>peaprenderidiomas@gmail.com</p>
-				</div>
-				<ul class="footer_socials">
-					<li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
-					<li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
-					<li><a href="#"><i class="uil uil-twitter"></i></a></li>
-					<li><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
-				</ul>
-			</div>
-	
-			<div class="footer_copyright">
-				<small>Copyright &copy; MISS NOE Propuestas para aprender ingles.</small>
 			</div>
 		</div>
-	</footer>
-	
 
-	
+		<div class="footer_2">
+			<h4>Permalinks</h4>
+			<ul class="permalinks">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="courses.html">Courses</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer_3">
+			<h4>Primacy</h4>
+			<ul class="privacy">
+
+				<li><a href="#">Terminos y condiciones</a></li>
+
+			</ul>
+		</div>
+
+		<div class="footer_4">
+			<h4>Contactenos</h4>
+			<div>
+				<p>+54 911 5142-4362</p>
+				<p>peaprenderidiomas@gmail.com</p>
+			</div>
+			<ul class="footer_socials">
+				<li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+				<li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
+				<li><a href="#"><i class="uil uil-twitter"></i></a></li>
+				<li><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="footer_copyright">
+			<small>Copyright &copy; MISS NOE Propuestas para aprender ingles.</small>
+		</div>
+		</div>
+	</footer>
+
+
+
 	<script src="./script.js"></script>
 </body>
-

@@ -23,33 +23,51 @@
 	--container-width-sm: 94%;
   
 	--transition: all 400ms ease;
-  }
-  
-   
-body {
-	font-family: 'Arial', sans-serif;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	background: var(--color-UR);
-  }
-  
-  .container {
-	width: 80%;
-	margin: 0 auto;
-  }
-  
-img {
-	max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
-	height: auto; /* Mantiene la proporción de aspecto original de la imagen */
-	display: block; /* Elimina espacios en blanco alrededor de la imagen */
-	margin: 0 auto; /* Centra la imagen horizontalmente */
 }
+   body {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		margin: 0;
+	}
+	
+	.container-form {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px; /* Añade un poco de espacio alrededor del formulario */
+		
+	}
+	
+	form#language-proficiency-test {
+		width: 50%; /* Ajusta esto según tus necesidades */
+		max-width: 800px; /* Limita el ancho del formulario para pantallas grandes */
+	}
+	.footer {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual tamaño */
+		justify-items: center; /* Centra el contenido horizontalmente */
+		align-items: start; /* Alinea el contenido al inicio verticalmente */
+		gap: 20px; /* Añade un espacio entre las columnas */
+		height: auto; /* Permite que el pie de página se expanda para acomodar su contenido */
+		padding: 20px; /* Añade un poco de espacio alrededor del pie de página */
+	}
+	
+	
+
+	.footer h4 {
+		font-size: 1.5em; /* Ajusta esto según tus necesidades */
+		text-align: center; /* Centra el texto */
+		color: #333; /* Ajusta esto según tus necesidades */
+	}
+	
+
 
 h1,
 h2,
 h3,
-h4,
+
 h5 {
   line-height: 1.2; 
 }
@@ -89,7 +107,7 @@ h3 {
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-*/
+
 form {
 	max-width: 600px;
 	margin: 0 auto;
@@ -97,7 +115,7 @@ form {
 	background:var(--color-danger);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 15, 0.5);
 }
-
+*/
 fieldset {
 	margin-bottom: 20px;
 	border: none;
@@ -215,4 +233,3 @@ body {
   
   
   /* Agrega más media queries y estilos según sea necesario */
-  
