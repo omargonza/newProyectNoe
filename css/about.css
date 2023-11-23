@@ -198,11 +198,12 @@
 
         .team_container{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: (1, 2fr);
             gap: 5rem;
         }
         .team_member{
             background: var(--color-bg1);
+            margin-top: 0;
             padding: 2rem;
             border: 1px solid transparent;
             transition: var(--transition);
@@ -254,13 +255,26 @@
 
 
 
-
-
-
-
-
-
-
-
 }
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 720px) {
+    
+  
+    .team_container {
+            
+        
+    
+           
+    
+      
+    max-width: 100%; /* Cambia el ancho máximo a 100% en pantallas más pequeñas */
+        }
+    }
+    
+        
+    
+    
+    
+        
     
