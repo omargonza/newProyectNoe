@@ -96,6 +96,7 @@ img {
   background: transparent;
   color: var(--color-RU);
   border-color: var(--color-bg1);
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -335,7 +336,20 @@ header {
   display: block;
 }
 
-/*------- TESTIMONIO --------*/
+/*-------  CONTACT --------*/
+#content {
+  width: 100%; /* Controla el ancho del div */
+  margin: 0 auto; /* Centra el div en la página */
+  padding: 20px; /* Agrega un relleno alrededor del contenido del div */
+  box-sizing: border-box; /* Asegura que el relleno y el borde del div no aumenten su tamaño total */
+}
+
+/* Agrega estos estilos en tu archivo de estilos CSS */
+.mensaje-oculto {
+  display: none;
+ 
+}
+
 
 
 /*------- FOOTER --------*/
@@ -619,11 +633,6 @@ footer ul li a:hover {
     background: var(--color-UR);
   }
 
-  /*-------------- TESTIMONIOS ---------------------*/
-  .testimonial_body {
-    padding: 1.2rem;
-    background: var(--color-UR);
-  }
 
   /*-------------- FOOTER ---------------------*/
   .footer_container {

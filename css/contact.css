@@ -134,6 +134,16 @@ textarea{
   cursor: pointer;
 }
 
+
+/* Agrega estos estilos en tu archivo de estilos CSS */
+#content {
+  display: none;
+  }
+  .mensaje-oculto {
+    display: none;
+    
+  }
+
 /* ============================ MEDIA QUERIES (TABLETS) =====================================*/
 
 @media screen and (max-width: 1024px){
@@ -163,11 +173,21 @@ textarea{
 form{
   background: var(--color-danger-variant);
 }
+
+
+
+/* Agrega estos estilos en tu archivo de estilos CSS */
+#content {
+display: none;
 }
-
-
+.mensaje-oculto {
+  display: none;
+  
+}
+}
 /* ============================ MEDIA QUERIES (PHONE) =====================================*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/*
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');*/
 /*
 * {
     margin:0;
@@ -332,9 +352,9 @@ form > button:hover,
     0%, 100% {transform: translateX(0);} 
     10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
     20%, 40%, 60%, 80% {transform: translateX(10px);} 
- }
-
+}
 */
+
 @media screen and (max-width:600px) {
     .container {
         width: 95%;
@@ -342,6 +362,7 @@ form > button:hover,
         flex-direction: column;
         gap:20px;
     }
+    
 
     .box-info {
         gap:15px;
@@ -350,10 +371,20 @@ form > button:hover,
     .box-info > h1 {
         font-size: 1.5rem;
     }
+
+    
+/* Agrega estos estilos en tu archivo de estilos CSS */
+#content {
+  display: none;
+  
+  .mensaje-oculto {
+    display: none;
+    
+  }
 }
 
 
-
+}
 
 
 /*
@@ -388,7 +419,7 @@ form{
       margin-right: 0;
   }
 }
-/*
+
 @media screen and (max-width: 720px) {
   .container {
       flex-direction: column;
@@ -433,9 +464,13 @@ form{
       width: 100%;
       margin-right: 0;
   }
-}
+
 
 @media  screen and (max-width: 600px){
   .container {
     flex-direction: column; Cambia a una disposición de columna para pantallas más pequeñas 
-  }*/
+  }
+
+}
+
+*/

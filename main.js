@@ -1,3 +1,5 @@
+
+/*
 window.onload = function() {
     var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
@@ -17,6 +19,9 @@ window.onload = function() {
     }
     xhttp.send();
 };
+
+*/
+
 
 // faq preguntas fecuentes, muestre la respuesta al hacer click
 /*
@@ -76,80 +81,46 @@ const closeNav = () =>{
 
 closeBtn.addEventListener("click",closeNav);
 
-/*
-//test js
-const form = document.getElementById('language-proficiency-test');
-const resultDiv = document.getElementById('result');
-let general_cont = 0;
-let business_cont = 0;
-let personal_cont = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    // Selecciona el mensaje y el botón
+    var mensajeRespuesta = document.getElementById('mensajeRespuesta');
+    var btnEnviarMensaje = document.getElementById('btnEnviarMensaje');
 
-form.addEventListener('submit', function (event) {
-	event.preventDefault();
-	const q1 = document.querySelector('input[name="q1"]:checked').value;
-	const q2 = document.querySelector('input[name="q2"]:checked').value;
-	const q3 = document.querySelector('input[name="q3"]:checked').value;
-	const q4 = document.querySelector('input[name="q4"]:checked').value;
-	const q5 = document.querySelector('input[name="q5"]:checked').value;
-	const q6 = document.querySelector('input[name="q6"]:checked').value;
+    // Verifica si los elementos existen antes de usarlos
+    if (!mensajeRespuesta || !btnEnviarMensaje) {
+        console.error('No se encontraron algunos elementos.');
+        return;
+    }
 
-	// Calculate the language preference based on the user's answers
-	// Replace this code with your own logic to calculate the language preference
-	let result;
+    // Agrega un event listener para el clic en el botón
+    btnEnviarMensaje.addEventListener('click', function () {
+        try {
+            // Muestra el mensaje de respuesta
+            mensajeRespuesta.classList.remove('mensaje-oculto');
 
-	if (q1 === 'general') {
-		general_cont++;
-	} else if (q1 === 'business') {
-		business_cont++;
-	} else if (q1 === 'personal') {
-		personal_cont++;
-	}
+            // Puedes agregar más lógica aquí, como enviar el formulario, etc.
+        } catch (error) {
+            console.error('Error al mostrar el mensaje de respuesta:', error.message);
+        }
+    });
+});
 
-	if (q2 === 'general') {
-		general_cont++;
-	} else if (q2 === 'business') {
-		business_cont++;
-	} else if (q2 === 'personal') {
-		personal_cont++;
-	}
+// Realiza la carga dinámica de contenido en un contenedor específico
+var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-	if (q3 === 'general') {
-		general_cont++;
-	} else if (q3 === 'business') {
-		business_cont++;
-	} else if (q3 === 'personal') {
-		personal_cont++;
-	}
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("content").innerHTML = this.responseText; // Cambiado a un contenedor específico
+    }
+};
 
-	if (q4 === 'general') {
-		general_cont++;
-	} else if (q4 === 'business') {
-		business_cont++;
-	} else if (q4 === 'personal') {
-		personal_cont++;
-	}
+if (width < 720) {
+    // Si el ancho de la ventana es menor a 768px, carga "contact_mobile.html"
+    xhttp.open("GET", "contact_mobile.html", true);
+} else {
+    // Si el ancho de la ventana es mayor o igual a 768px, carga "contact.html"
+    xhttp.open("GET", "contact.html", true);
+}
 
-	if (q5 === 'general') {
-		general_cont++;
-	} else if (q5 === 'business') {
-		business_cont++;
-	} else if (q5 === 'personal') {
-		personal_cont++;
-	}
-
-	if (q6 === 'general') {
-		general_cont++;
-	} else if (q6 === 'business') {
-		business_cont++;
-	} else if (q6 === 'personal') {
-		personal_cont++;
-	}
-
-	const general = general_cont;
-	const business = business_cont;
-	const personal = personal_cont;
-
-	const url = `result.html?general=${general}&business=${business}&personal=${personal}`;
-    
-	window.location.href = url;
-});*/
+xhttp.send();
